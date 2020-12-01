@@ -2,7 +2,8 @@
                  'list-group-item-success':status==='allumer',
                  'list-group-item-danger':status==='eteint'}">
 
-
+    <div style="width: 20px;height: 20px;background-color: red;" *ngIf="status==='eteint'"></div>
+    <div style="width: 20px;height: 20px;background-color: green;" *ngIf="status==='allumer'"></div>
 
 
     <div [ngStyle]="{color: getColor()}">
